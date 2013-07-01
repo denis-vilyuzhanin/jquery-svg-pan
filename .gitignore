@@ -1,0 +1,12 @@
+.project
+.settings
+.c9revisions/
+
+*~
+
+*.diff
+*.patch
+
+/*.html
+/*.js
+/*.css
