@@ -5,7 +5,8 @@ SVG pan could be attached to any SVG tag by standard JQuery selector.
 ```javascript
 $( "svg" ).svgPan();
 ```
-After that special object must be attached to DOM which represents created widget. This object provide API which controls SVGPan instance. Access could be obtained by following expression.
+After that special object must be attached to DOM which represents created widget. 
+This object provide API which controls SVGPan instance. Access could be obtained by following expression.
 
 ```javascript
  $( "svg" ).svgPan(function(widget){
