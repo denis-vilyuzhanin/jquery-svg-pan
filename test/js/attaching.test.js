@@ -59,16 +59,16 @@ test("attach with options and check", function(){
 });
 
 test("multy attach with options and check", function(){
-    expect(4 * 2);
+    expect(1);
     var options = {
         anyProperty : 'anyValue'
     };
     var selectedWidgetIDs = [];
     function checkWidget(widget) {
-        selectedWidgetIDs.push(widget.getId());
+        selectedWidgetIDs.push(widget.id());
     }
     // attach widget and check
-    $('svgPan').svgPan(options, checkWidget);
+    $('.svgPan').svgPan(options, checkWidget);
     
     deepEqual(selectedWidgetIDs, ['svg0', 'svg1'], "Selected SVG widgets");
 });

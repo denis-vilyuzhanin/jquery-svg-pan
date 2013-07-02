@@ -16,7 +16,7 @@
         this.each(function(){
             var svgPan = $.data(this, 'SVGPanPlugin');
             if (!svgPan) {
-                var svgPan = new SVGPan($(this));    
+                var svgPan = new SVGPan($(this), args.options);    
                 $.data(this, 'SVGPanPlugin', svgPan);
             }
             if (args.callback) {
@@ -31,14 +31,24 @@
         return this;    
     }
     
-    function SVGPan(element) {
+    function SVGPan(element, options) {
         this._element = element;
+        this._options = options;
+    }
+    SVGPan.prototype.id = function() {
+        return this._element.attr('id');
+    }
+    SVGPan.prototype.options = function() {
+        return this._options;
+    }
+    SVGPan.prototype.dom = function() {
+        return this._element[0];
     }
     
     
     function parseArguments(args) {
         var result = {
-            options : null,
+            options : {},
             callback : null
         };
         if (args.length == 1) {
