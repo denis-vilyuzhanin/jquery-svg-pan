@@ -1,4 +1,4 @@
-Copyright 2013 jQuery Foundation and other contributors
+Copyright 2013 Denys Viliuzhanin <dvilyuzhanin@gmail.com> and other contributors
 https://github.com/denis-vilyuzhanin/jquery-svg-pan
 
 Permission is hereby granted, free of charge, to any person obtaining
